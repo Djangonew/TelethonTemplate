@@ -9,8 +9,8 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 # Basics
-API_ID = config("20247370", default=True, cast=int)
-API_HASH = config("813309fab8cd9fce260ce7269e543bdb", default=True)
-BOT_TOKEN = config("6756415088:AAFd88wWnxGw2y73DXlcMXchCtkISLWE92A", default=True)
+API_ID = config("20247370")
+API_HASH = config("813309fab8cd9fce260ce7269e543bdb")
+BOT_TOKEN = config("6756415088:AAFd88wWnxGw2y73DXlcMXchCtkISLWE92A")
 
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN) 
